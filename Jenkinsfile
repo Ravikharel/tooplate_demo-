@@ -1,8 +1,8 @@
 pipeline{ 
     agent any
     environment{ 
-        ansible_name = vagrant
-        ansible_node = 192.168.56.15
+        ansible_name = "vagrant"
+        ansible_node = "192.168.56.15"
     }
 
     stages{ 
