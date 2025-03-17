@@ -18,7 +18,7 @@ pipeline{
 
 
                 script{
-                sh " ssh ${ansible_name}@${ansible_node} 'ansible-playbook -i /home/vagrant/ansible/inventory.ini /home/vagrant/anisble/deploy.yml'"
+                sh " ssh ${ansible_name}@${ansible_node} 'ansible-playbook -i /home/vagrant/ansible/inventory.ini /home/vagrant/ansible/deploy.yml'"
                 }
             }
         }
