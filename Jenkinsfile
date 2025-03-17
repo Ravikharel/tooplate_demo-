@@ -9,7 +9,7 @@ pipeline{
         stage('Copy folder to the ansible node'){
             steps{ 
                 script{ 
-                sh " scp -r templatemo_591_villa_agency ${ansible_name}@${ansible_node}:/home/vagrant/files/"
+                sh " scp -r templatemo_591_villa_agency/ ${ansible_name}@${ansible_node}:/home/vagrant/files/"
                 }
             }
         }
